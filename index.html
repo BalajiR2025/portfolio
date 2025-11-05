@@ -1,92 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balaji Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Balaji R — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header>
-    <nav>
-        <h2 class="logo">Balaji</h2>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#home">Balaji R</a>
+    <nav class="nav">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="#contact" class="nav-link">Contact</a>
     </nav>
+    <button id="nav-toggle" aria-label="Open menu">☰</button>
+  </div>
 </header>
 
-<!-- HOME -->
-<section id="home" class="hero fade-in">
-    <h1>Hello, I'm <span>Balaji</span></h1>
-    <p>AI & Data Science Enthusiast | Curious Learner | Future Innovator</p>
-</section>
+<main>
+  <!-- HERO -->
+  <section id="home" class="hero section">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <h1>Hello, I'm <span class="accent">Balaji</span></h1>
+        <p class="lead">AI & Data Science Enthusiast · Curious Learner · Future Innovator</p>
+        <p class="hero-summary">
+          Welcome to my portfolio. I build machine learning solutions and practical web tools — exploring data, building models, and shipping working prototypes.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+      </div>
 
-<!-- ABOUT -->
-<section id="about" class="section fade-in">
-    <h2>About Me</h2>
-    <p>
-        I am Balaji, born and raised in Vellore. I am pursuing B.Tech Artificial Intelligence and 
-        Data Science at Rajalakshmi Engineering College. I enjoy exploring machine learning, data analysis,
-        web development, and automation. I believe in learning beyond textbooks — building, experimenting, and improving continuously.
-    </p>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section fade-in">
-    <h2>Projects</h2>
-
-    <div class="project-card">
-        <h3>Loan Approval Prediction</h3>
-        <p>A machine learning project that predicts whether a loan application should be approved.</p>
-        <a href="https://github.com/BalajiR2025/Loan-Approval-Prediction" target="_blank" class="btn">View Project</a>
+      <div class="hero-right">
+        <div class="profile-card">
+          <img src="assets/profile.jpg" alt="Balaji profile photo" class="profile-img" />
+          <div class="profile-info">
+            <h3>Balaji</h3>
+            <p class="muted">B.Tech — AI & Data Science (prefinal year)</p>
+            <p class="muted small">Rajalakshmi Engineering College</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="section fade-in">
-    <h2>Skills</h2>
-    <div class="skills-box">
-        <ul>
-            <li><strong>Programming:</strong> Python, Java, C, R</li>
-            <li><strong>Web:</strong> HTML, CSS, JavaScript, React (Basics)</li>
-            <li><strong>Data Science:</strong> NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn</li>
-            <li><strong>Tools:</strong> Git, GitHub, VS Code, Jupyter Notebook, Google Colab</li>
-            <li><strong>Databases:</strong> SQL, MySQL</li>
-        </ul>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="card grid">
+        <div class="card-left fade-in">
+          <h2>About Me</h2>
+          <p>Hi, I'm Balaji — born and raised in Vellore. I’m currently in my pre-final year of B.Tech (AI & Data Science) at Rajalakshmi Engineering College. I enjoy solving real-world problems using machine learning, data analysis, and web development. I learn by building: experiments, small projects, and incremental improvements.</p>
+          <blockquote class="quote">“Consistency, curiosity, and creativity drive me forward.”</blockquote>
+          <p>I am a fast learner, a good team player, and I enjoy mentoring peers and staying updated on AI and startup trends.</p>
+        </div>
+        <div class="card-right fade-in">
+          <h3>Quick Facts</h3>
+          <ul class="facts">
+            <li><strong>Location:</strong> Vellore / Chennai</li>
+            <li><strong>Course:</strong> B.Tech AI & Data Science (prefinal)</li>
+            <li><strong>Interests:</strong> ML, Data Analysis, Web Dev, Automation</li>
+          </ul>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications" class="section fade-in">
-    <h2>Certifications</h2>
-    <ul>
-        <li>Data Analytics using Power BI (Livewire, Jan 2025)</li>
-        <li>Gen AI for Code Generation - Coursera (Apr 2025)</li>
-        <li>Environmental Impact Assessment - NPTEL (25/25)</li>
-        <li>CodeQuest Round 1 - REC</li>
-        <li>Business Analyst Workshop - GUVI</li>
-        <li>AI Tools Workshop - Skill Nation</li>
-        <li>UiPath Automation Explorer - UiPath Academic Alliance</li>
-        <li>Fullstack Web Development Internship - InternEzy</li>
-    </ul>
-</section>
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card fade-in">
+          <h3>Predicting Loan Approval</h3>
+          <p>A Decision Tree model that predicts loan approval using applicant financial and personal details. Includes preprocessing, feature selection, and evaluation (confusion matrix, accuracy).</p>
+          <div class="project-actions">
+            <a class="btn" href="projects/loan-approval.html" target="_blank">Read More</a>
+            <a class="btn ghost" href="https://github.com/BalajiR2025/Loan-Approval-Prediction" target="_blank">Code</a>
+          </div>
+        </article>
 
-<!-- CONTACT -->
-<section id="contact" class="section fade-in">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:balajirameshofficial@gmail.com">balajirameshofficial@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/balajir2005" target="_blank">linkedin.com/in/balajir2005</a></p>
-    <p>GitHub: <a href="https://github.com/BalajiR2025" target="_blank">github.com/BalajiR2025</a></p>
-</section>
+        <!-- placeholder for future project cards -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Technical & Soft Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card fade-in">
+          <h4>Programming</h4>
+          <p>Python · R · Java · C</p>
+        </div>
+        <div class="skill-card fade-in">
+          <h4>Data Science</h4>
+          <p>NumPy · pandas · scikit-learn · Matplotlib · Seaborn</p>
+        </div>
+        <div class="skill-card fade-in">
+          <h4>Web & Tools</h4>
+          <p>HTML · CSS · JavaScript · Git · VS Code · Jupyter</p>
+        </div>
+        <div class="skill-card fade-in">
+          <h4>Soft Skills</h4>
+          <p>Deep thinker · Observant · Calm under pressure · Team player</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2>Certifications & Workshops</h2>
+      <div class="cert-grid fade-in">
+        <div class="cert-item">
+          <h4>Data Analytics using Power BI</h4>
+          <p>Livewire — Jan 2025 • <a href="certificates/powerbi.pdf" target="_blank">View</a></p>
+        </div>
+        <div class="cert-item">
+          <h4>Gen AI for Code Generation</h4>
+          <p>Coursera/Edureka — Apr 2025 • <a href="certificates/genai.pdf" target="_blank">View</a></p>
+        </div>
+        <div class="cert-item">
+          <h4>Environmental Impact Assessment — NPTEL</h4>
+          <p>Score: 25/25 • <a href="certificates/nptel.pdf" target="_blank">View</a></p>
+        </div>
+        <div class="cert-item">
+          <h4>Fullstack Internship — InternEzy</h4>
+          <p>Jan–Mar 2025 • <a href="certificates/fullstack_internship.pdf" target="_blank">View</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container contact-card fade-in">
+      <div class="contact-left">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:balajirameshofficial@gmail.com">balajirameshofficial@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/balajir2005" target="_blank">linkedin.com/in/balajir2005</a></p>
+        <p>GitHub: <a href="https://github.com/BalajiR2025" target="_blank">github.com/BalajiR2025</a></p>
+      </div>
+      <div class="contact-right">
+        <h4>Quick Note</h4>
+        <p>If you have collaboration ideas, internship opportunities, or project questions — feel free to reach out. I respond to meaningful messages.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 Balaji R. All rights reserved.</p>
+  </div>
+</footer>
 
 <script src="script.js"></script>
 </body>
