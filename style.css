@@ -1,57 +1,88 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background: #111;
-    color: #fff;
+    font-family: Arial, sans-serif;
+    background: #fdfdfd;
+    color: #222;
 }
 
-/* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: #000;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
 }
 
-header nav a {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0077ff;
+}
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 span {
+    color: #0077ff;
+}
+
+.section {
+    padding: 70px 50px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-card, .skills-box {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.project-card .btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 15px;
+    background: #0077ff;
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
+    border-radius: 5px;
 }
 
-/* Sections */
-section {
-    padding: 60px;
-    text-align: center;
+.fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
-
-/* Skills */
-.skill-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.skill-list li {
-    background: #222;
-    padding: 10px 20px;
-    border-radius: 8px;
-}
-
-/* Project Card */
-.project-card {
-    background: #222;
-    padding: 20px;
-    margin: 20px auto;
-    width: 70%;
-    border-radius: 10px;
-}
-
-.project-card a {
-    color: #00eaff;
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
