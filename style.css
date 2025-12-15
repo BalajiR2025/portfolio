@@ -93,12 +93,12 @@ body {
    HERO
 ========================= */
 .hero {
-  min-height: 100vh;
-  text-align: center;
+  min-height: 100vh;          /* FULL SCREEN */
   display: flex;
-  flex-direction: column;
+  align-items: center;        /* CENTER VERTICALLY */
   justify-content: center;
-  gap: 14px;
+  text-align: center;
+  padding: 60px 20px;
 }
 
 .hero-img {
@@ -347,4 +347,16 @@ footer {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
    }
 
+}
+.hero-content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .profile-pic {
+    width: 180px;
+    height: 230px;
+  }
 }
