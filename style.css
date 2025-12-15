@@ -290,3 +290,54 @@ footer {
   background: #0077ff;
   color: white;
 }
+
+/* HERO UPGRADE */
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #00e0ff;
+}
+
+.typing-text {
+  font-size: 1.4rem;
+  height: 40px;
+  color: #00f5a0;
+  margin-bottom: 15px;
+}
+
+.hero-desc {
+  max-width: 500px;
+  color: #cfd8dc;
+  line-height: 1.6;
+}
+
+/* Floating Image Animation */
+.floating {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .typing-text {
+    font-size: 1.2rem;
+  }
+
+  .profile-pic {
+    width: 130px;
+    height: 130px;
+  }
+}
