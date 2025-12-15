@@ -337,7 +337,14 @@ footer {
   }
 
   .profile-pic {
-    width: 130px;
-    height: 130px;
-  }
+  width: 220px;
+  height: 280px;              /* FIXED HEIGHT */
+  object-fit: cover;          /* CROPS IMAGE */
+  object-position: top center;/* SHOW FACE */
+  border-radius: 20px;        /* MODERN CARD LOOK */
+  margin-bottom: 20px;
+  border: 3px solid #00e0ff;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+   }
+
 }
