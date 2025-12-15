@@ -84,3 +84,41 @@ window.addEventListener("scroll", () => {
     }
   }, 1200);
 });
+
+/* =========================
+   TYPING TEXT EFFECT
+========================= */
+
+const words = [
+  "AI & Data Science Student",
+  "Machine Learning Enthusiast",
+  "Future Innovator"
+];
+
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const typingElement = document.getElementById("typing");
+
+function typeEffect() {
+  const currentWord = words[wordIndex];
+  
+  if (isDeleting) {
+    typingElement.textContent = currentWord.substring(0, charIndex--);
+  } else {
+    typingElement.textContent = currentWord.substring(0, charIndex++);
+  }
+
+  if (!isDeleting && charIndex === currentWord.length) {
+    setTimeout(() => isDeleting = true, 1200);
+  }
+
+  if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    wordIndex = (wordIndex + 1) % words.length;
+  }
+
+  setTimeout(typeEffect, isDeleting ? 50 : 100);
+}
+
+typeEffect();
