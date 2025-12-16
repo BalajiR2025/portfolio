@@ -205,8 +205,8 @@ body {
     padding: 30px 20px 40px; /* reduced top padding */
     background: linear-gradient(
       165deg,
-      #685369 40%,   /* moved UP from 55% → 48% */
-      #ffffff 40%
+      #685369 45%,   /* moved UP from 55% → 48% */
+      #ffffff 45%
     );
     display: flex;
     align-items: center;
