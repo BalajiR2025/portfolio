@@ -126,9 +126,32 @@ body {
 }
 
 /* ABOUT */
+/* =========================
+   ABOUT – OPPOSITE SLANTED SPLIT
+========================= */
+
 .about {
+  position: relative;
   background: #ffffff;
+  overflow: hidden;
 }
+
+.about::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: #685369;
+
+  /* 🔁 OPPOSITE SLANT */
+  transform: skewY(6deg);
+  transform-origin: top right;
+
+  z-index: 0;
+}
+
 
 .about-wrapper {
   width: 100%;
@@ -267,6 +290,13 @@ footer {
     width: 200px;
     height: 200px;
     margin: auto;
+  }
+
+  .about::before {
+    top: -80px;
+    height: 55%;
+    transform: skewY(8deg);
+    transform-origin: top right;
   }
 }
 
