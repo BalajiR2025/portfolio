@@ -208,13 +208,16 @@ body {
     );
   }
 
-  /* FORCE ONE-SCREEN HERO */
+  /* FORCE ONE-SCREEN HERO 
   .split {
     height: 100vh;
     grid-template-columns: 1fr;
     gap: 30px;
     justify-content: center;
     text-align: center;
+  }*/
+   .split {
+    transform: translateY(-20px);
   }
 
   /* IMAGE POSITION */
