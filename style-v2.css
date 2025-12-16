@@ -229,16 +229,16 @@ body {
   }
 
   /* TEXT CONTRAST */
-  .hero h1{
-      color: #000000;
-  }
-   
-  .typing-text {
-    color: #374151;
+  section.hero .text h1 {
+    color: #000000 !important;
   }
 
-  .hero-desc {
-    color: #4b5563;
+  section.hero .text .typing-text {
+    color: #111827 !important;
+  }
+
+  section.hero .text .hero-desc {
+    color: #374151 !important;
   }
 
   .text {
