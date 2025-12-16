@@ -144,15 +144,20 @@ body {
 .about::before {
   content: "";
   position: absolute;
+
+  /* 🔥 START POINT = CENTER-LEFT TOP */
   top: 0;
-  right: -40%;
-  width: 75%;
+  left: 0;
+
+  /* 🔥 WIDTH JUST ENOUGH TO CROSS CENTER */
+  width: 65%;
   height: 100%;
+
   background: var(--split);
 
-  /* ✅ THIS IS THE KEY FIX */
-  transform: skewX(-14deg);
-  transform-origin: top right;
+  /* 🔥 OPPOSITE DIRECTION OF HERO */
+  transform: skewX(14deg);
+  transform-origin: top left;
 
   z-index: 0;
 }
