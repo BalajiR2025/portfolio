@@ -253,12 +253,14 @@ footer {
     min-height: 100vh;
     padding: 60px 20px;
     background: linear-gradient(
-      180deg,
-      #685369 45%,   /* TOP SPLIT */
-      #ffffff 45%   /* BOTTOM SPLIT */
+      165deg,
+      #685369 55%,
+      #ffffff 55%
     );
+    display: flex;
+    align-items: center;
   }
-
+   
   .split {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -272,18 +274,23 @@ footer {
   }
 
   /* TEXT READABILITY */
-  .hero h1 {
+  .hero h1,
+  .typing-text {
     color: #ffffff;
   }
 
-  .typing-text,
   .hero-desc {
-    color: #f1f5f9;
+    color: #e5e7eb;
+  }
+
+  .text {
+    margin-top: 20px;
   }
 
   /* REMOVE ICONS ON MOBILE */
   .hero-socials,
+  .hero-socials.bottom-left,
   .icon-nav {
-    display: none;
+    display: none !important;
   }
 }
