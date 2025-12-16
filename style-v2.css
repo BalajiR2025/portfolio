@@ -145,22 +145,23 @@ body {
   content: "";
   position: absolute;
 
-  /* 🔥 START POINT = CENTER-LEFT TOP */
+  /* 🔥 ANCHOR TO RIGHT SIDE */
   top: 0;
-  left: 0;
+  right: 0;
 
-  /* 🔥 WIDTH JUST ENOUGH TO CROSS CENTER */
+  /* Covers right portion only */
   width: 65%;
   height: 100%;
 
   background: var(--split);
 
-  /* 🔥 OPPOSITE DIRECTION OF HERO */
-  transform: skewX(14deg);
-  transform-origin: top left;
+  /* 🔥 Diagonal from top-center → bottom-right */
+  transform: skewX(-14deg);
+  transform-origin: top right;
 
   z-index: 0;
 }
+
 
 .about-wrapper {
   position: relative;
