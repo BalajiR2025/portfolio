@@ -204,9 +204,9 @@ body {
     min-height: 100vh;
     padding: 30px 20px 40px; /* reduced top padding */
     background: linear-gradient(
-      165deg,
-      #685369 48%,   /* moved UP from 55% → 48% */
-      #ffffff 48%
+      145deg,
+      #685369 35%,   /* moved UP from 55% → 48% */
+      #ffffff 35%
     );
     display: flex;
     align-items: center;
