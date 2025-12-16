@@ -22,8 +22,8 @@
   position: relative;
   background: linear-gradient(
     120deg,
-    #0f172a 50%,     /* dark slate left */
-    #f8fafc 50%      /* clean light right */
+    #eaf2ff 50%,   /* soft light blue (left) */
+    #ffffff 50%   /* white (right) */
   );
 }
 
@@ -89,14 +89,14 @@ body {
 
 /* HERO */
 .hero-img {
-  width: 260px;
-  height: 340px;
+  width: 240px;
+  height: 240px;
   object-fit: cover;
   object-position: top center;
-  border-radius: 18px;          /* modern rounded rectangle */
-  border: none;                /* ❌ remove green circle */
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
-}
+  border-radius: 50%;          /* ✅ CIRCLE */
+  border: none;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+
 
 .hero h1 {
   font-size: 2.8rem;
@@ -211,7 +211,7 @@ footer {
   }
 
   .hero {
-    background: #0f172a;   /* single color on mobile */
+    background: #ffffff;   /* single clean background */
   }
 
   .hero h1,
@@ -223,10 +223,8 @@ footer {
     color: #cbd5f5;
   }
 
-  .hero-socials.bottom-left {
-    position: static;
-    justify-content: center;
-    margin-top: 24px;
+  .hero-socials {
+    display: none;   /* ❌ hide icons on mobile */
   }
 }
 
@@ -290,4 +288,28 @@ footer {
 .hero-socials.bottom-left a:hover {
   transform: translateY(-4px);
   background: #1e293b;
+}
+
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+  padding: 12px 20px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.3);
+  transition: 0.3s;
+}
+
+.resume-btn i {
+  font-size: 1.1rem;
+}
+
+.resume-btn:hover {
+  background: #1e40af;
+  transform: translateY(-3px);
 }
