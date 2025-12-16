@@ -140,29 +140,28 @@ body {
   overflow: hidden;
 }
 
-/* ✅ FIXED DIAGONAL */
+/* RIGHT-SIDE DIAGONAL SPLIT */
 .about::before {
   content: "";
   position: absolute;
 
-  /* 🔥 ANCHOR TO RIGHT SIDE */
-  top: 0;
-  right: 0;
+  /* anchor to right */
+  top: -10%;
+  right: -30%;
 
-  /* Covers right portion only */
-  width: 65%;
-  height: 100%;
+  width: 70%;
+  height: 130%;
 
   background: var(--split);
 
-  /* 🔥 Diagonal from top-center → bottom-right */
-  transform: skewX(-14deg);
+  /* diagonal from top-left → bottom-right */
+  transform: rotate(-12deg);
   transform-origin: top right;
 
   z-index: 0;
 }
 
-
+/* CONTENT ABOVE DIAGONAL */
 .about-wrapper {
   position: relative;
   z-index: 2;
@@ -170,6 +169,11 @@ body {
   grid-template-columns: 1.2fr 0.8fr;
   gap: 60px;
   align-items: center;
+}
+
+/* TEXT MUST STAY DARK */
+.about-text {
+  color: #0f172a;
 }
 
 .about-text h2 {
@@ -184,18 +188,14 @@ body {
   margin-bottom: 16px;
 }
 
-.about-visual {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+/* IMAGE CARD */
 .about-img {
   width: 100%;
   max-width: 320px;
-  border-radius: 20px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  border-radius: 22px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.18);
 }
+
 
 /* EDUCATION */
 .edu-card {
@@ -269,10 +269,11 @@ footer {
   .about::before {
     right: -60%;
     width: 100%;
-    transform: skewX(-12deg);
+    height: 120%;
+    transform: rotate(-10deg);
   }
 
   .about-img {
-    margin: auto;
+    margin: 0 auto;
   }
 }
