@@ -201,11 +201,15 @@ body {
 
   /* MOBILE DIAGONAL SPLIT */
   .hero {
+    min-height: 100vh;
+    padding: 30px 20px 40px; /* reduced top padding */
     background: linear-gradient(
       165deg,
-      var(--split) 55%,
-      #ffffff 55%
+      #685369 48%,   /* moved UP from 55% → 48% */
+      #ffffff 48%
     );
+    display: flex;
+    align-items: center;
   }
 
   /* FORCE ONE-SCREEN HERO 
