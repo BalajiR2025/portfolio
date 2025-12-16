@@ -1,139 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Balaji | Portfolio</title>
-
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- FLOATING ICON NAV -->
-<nav class="icon-nav">
-  <a href="#home" title="Home">🏠</a>
-  <a href="#about" title="About">👤</a>
-  <a href="#education" title="Education">🎓</a>
-  <a href="#skills" title="Skills">🧠</a>
-  <a href="#projects" title="Projects">💼</a>
-  <a href="#certifications" title="Certifications">📜</a>
-  <a href="#contact" title="Contact">✉️</a>
-</nav>
+<div class="icon-nav">
+  <a href="#home">🏠</a>
+  <a href="#about">👤</a>
+  <a href="#education">🎓</a>
+  <a href="#skills">🧠</a>
+  <a href="#projects">💻</a>
+  <a href="#contact">✉️</a>
+</div>
 
 <!-- HERO -->
-<section id="home" class="hero">
-  <div class="hero-content fade">
-    
-    <img src="assets/profile.jpg" alt="Balaji Photo" class="profile-pic floating">
-
-    <h1>Hello, I'm <span class="highlight">Balaji</span></h1>
-
-    <h2 class="typing-text">
-      <span id="typing"></span>
-    </h2>
-
-    <p class="hero-desc">
-      Welcome to my portfolio. Explore my journey, skills, and projects in AI & Data Science.
-    </p>
-
+<section id="home" class="section hero">
+  <div class="split">
+    <div class="visual">
+      <!-- 🔴 PUT YOUR PHOTO HERE -->
+      <img src="assets/profile.jpg" alt="Balaji" class="hero-img">
+    </div>
+    <div class="text">
+      <h1>Hello, I’m <span class="highlight">Balaji</span></h1>
+      <p class="typing-text">AI & Data Science Student</p>
+      <p class="hero-desc">
+        Passionate about building data-driven solutions, learning by doing,
+        and growing into a future-ready technologist.
+      </p>
+    </div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section glass fade">
-  <h2>About Me</h2>
-  <p>
-    Hi, I'm Balaji! I was born and raised in Vellore, where my curiosity for technology began.
-    I am currently pursuing my pre-final year of B.Tech in Artificial Intelligence and Data Science
-    at Rajalakshmi Engineering College.
-  </p>
-  <p>
-    I enjoy exploring machine learning, data analysis, and web development. I believe in learning
-    beyond textbooks by building, breaking, and improving real-world solutions.
-  </p>
-
-  <blockquote>
-    “Consistency, curiosity, and creativity drive me forward.”
-  </blockquote>
+<section id="about" class="section">
+  <div class="split">
+    <div class="text">
+      <h2>Who I Am</h2>
+      <p>
+        I was born and raised in Vellore. From school days, I’ve been curious
+        about how technology works and how data can solve real problems.
+      </p>
+      <p>
+        Currently pursuing B.Tech in Artificial Intelligence & Data Science at
+        Rajalakshmi Engineering College.
+      </p>
+      <blockquote>
+        “Consistency, curiosity, and creativity drive me forward.”
+      </blockquote>
+    </div>
+    <div class="visual">
+      <!-- OPTIONAL ILLUSTRATION LATER -->
+    </div>
+  </div>
 </section>
 
 <!-- EDUCATION -->
-<section id="education" class="section fade">
-  <h2>Education</h2>
+<section id="education" class="section">
+  <div class="split">
+    <div class="text">
+      <h2>Education</h2>
 
-  <div class="timeline">
-    <div class="timeline-item">
-      <span>2010 – 2023</span>
-      <h3>Higher Secondary Education</h3>
-      <p>Sunbeam Schools</p>
-    </div>
+      <div class="edu-card">
+        <span>2010 – 2023</span>
+        <h3>Higher Secondary Education</h3>
+        <p>ABS Vidhya Mandhir</p>
+      </div>
 
-    <div class="timeline-item">
-      <span>2023 – 2027</span>
-      <h3>B.Tech – AI & Data Science</h3>
-      <p>Rajalakshmi Engineering College</p>
+      <div class="edu-card">
+        <span>2023 – 2027</span>
+        <h3>B.Tech AI & Data Science</h3>
+        <p>Rajalakshmi Engineering College</p>
+      </div>
     </div>
+    <div class="visual"></div>
   </div>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="section fade">
-  <h2>Skills</h2>
-
-  <div class="skills-scroll">
-    <span>Python</span>
-    <span>R</span>
-    <span>Java</span>
-    <span>C</span>
-    <span>Machine Learning</span>
-    <span>Data Analysis</span>
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>SQL</span>
-    <span>Git</span>
-    <span>Jupyter</span>
+<section id="skills" class="section">
+  <div class="center">
+    <h2>Skills</h2>
+    <div class="skills-scroll">
+      <span>Python</span>
+      <span>Machine Learning</span>
+      <span>Scikit-learn</span>
+      <span>Power BI</span>
+      <span>Excel</span>
+      <span>SQL</span>
+      <span>Flask</span>
+      <span>C</span>
+      <span>Azure</span>
+    </div>
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section fade">
-  <h2>Projects</h2>
+<section id="projects" class="section">
+  <div class="center">
+    <h2>Projects</h2>
 
-  <div class="project-card">
-    <h3>Loan Approval Prediction</h3>
-    <p>
-      A machine learning project that predicts loan approval using applicant data.
-    </p>
-    <a href="projects/loan-approval.html" target="_blank">Read More →</a>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Loan Approval Prediction</h3>
+        <p>
+          Machine learning model that predicts loan approval based on
+          applicant data.
+        </p>
+        <a href="#">Read More →</a>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications" class="section fade">
-  <h2>Certifications & Training</h2>
-
-  <ul class="cert-list">
-    <li><a href="certificates/powerbi.pdf" target="_blank">Data Analytics using Power BI</a></li>
-    <li><a href="certificates/genai.pdf" target="_blank">Gen AI for Code Generation</a></li>
-    <li><a href="certificates/nptel.pdf" target="_blank">Environmental Impact Assessment (NPTEL)</a></li>
-    <li><a href="certificates/internship.pdf" target="_blank">Fullstack Internship – InternEzy</a></li>
-  </ul>
-</section>
-
 <!-- CONTACT -->
-<section id="contact" class="section glass fade">
-  <h2>Contact</h2>
-
-  <p>Email: <a href="mailto:balajirameshofficial@gmail.com">balajirameshofficial@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/balajir2005" target="_blank">balajir2005</a></p>
-  <p>GitHub: <a href="https://github.com/BalajiR2025" target="_blank">BalajiR2025</a></p>
+<section id="contact" class="section">
+  <div class="center">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:balajirameshofficial@gmail.com">balajirameshofficial@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/balajir2005" target="_blank">linkedin.com/in/balajir2005</a></p>
+  </div>
 </section>
 
 <footer>
-  © 2025 Balaji • Made with ❤️
+  © 2025 Balaji. All rights reserved.
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
