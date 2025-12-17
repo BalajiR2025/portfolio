@@ -311,6 +311,7 @@ body {
   color: #fff;
   font-size: 0.85rem;
 }
+
 /* PROJECT */
 .project-card {
   background: white;
@@ -383,15 +384,6 @@ footer {
 
   .skills-subtitle {
     font-size: 1rem;
-  }
-
-  .bento-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .bento-card.large,
-  .bento-card.small {
-    grid-column: span 1;
   }
 
   .skills-bento .bento-grid {
