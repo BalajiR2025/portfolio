@@ -180,17 +180,72 @@ body {
 
 
 /* EDUCATION */
-.edu-card {
-  background: white;
-  padding: 20px;
-  border-radius: var(--radius);
-  margin-top: 16px;
-  box-shadow: var(--shadow);
+.education {
+  background: #ffffff;
 }
 
-.edu-card span {
-  color: var(--primary);
+.edu-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  margin-bottom: 50px;
+  color: #111827;
+  text-align: center;
+}
+
+/* TIMELINE */
+.edu-timeline {
+  position: relative;
+  padding-left: 30px;
+  border-left: 3px solid var(--split);
+}
+
+.edu-item {
+  background: #ffffff;
+  padding: 22px 26px;
+  margin-bottom: 40px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.edu-item::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 24px;
+  width: 14px;
+  height: 14px;
+  background: var(--primary);
+  border-radius: 50%;
+}
+
+.edu-year {
   font-size: 0.85rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.edu-item h3 {
+  margin-top: 6px;
+  font-size: 1.25rem;
+  color: #0f172a;
+}
+
+.edu-item p {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.edu-status {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  color: var(--muted);
+  font-style: italic;
 }
 
 /* SKILLS */
@@ -256,5 +311,16 @@ footer {
   .about-img {
     max-width: 300px;
     margin: 0 auto;
+  }
+  .edu-timeline {
+    padding-left: 20px;
+  }
+
+  .edu-item::before {
+    left: -32px;
+  }
+
+  .section-title {
+    font-size: 2rem;
   }
 }
