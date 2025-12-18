@@ -244,102 +244,81 @@ body {
 }
 
 /* =========================
-   SKILLS – FINAL POLISH
+   SKILLS SECTION
 ========================= */
 
-.magnetic-skills {
-  background: #ffffff; /* ✅ PURE WHITE */
+.skills-section {
+  background: #ffffff; /* WHITE background */
   text-align: center;
 }
 
 .skills-title {
-  font-size: 2.6rem;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
   color: #3b2f2f;
-  margin-bottom: 8px;
-}
-
-.skills-subtitle {
-  max-width: 720px;
-  margin: 0 auto 60px;
-  color: #6b4e4e;
-  font-size: 1.05rem;
 }
 
 /* GRID */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: 28px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 30px;
   max-width: 1100px;
   margin: auto;
 }
 
 /* CARD */
 .skill-card {
-  background: #ffffff; /* no grey */
-  border-radius: 22px;
-  padding: 28px 20px;
-  box-shadow: 0 16px 40px rgba(59,47,47,0.15);
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   transition: all 0.35s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 14px;
+  cursor: pointer;
 }
 
-/* ICONS (DEVICON) */
-.skill-card i {
-  font-size: 2.6rem;
-  transition: transform 0.35s ease, filter 0.35s ease;
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 45px rgba(104,83,105,0.35);
 }
 
-/* CUSTOM LOGOS */
-.custom-logo {
-  width: 36px;              /* ✅ FIXED SIZE */
-  height: auto;
-  transition: transform 0.35s ease, filter 0.35s ease;
+/* ICON */
+.skill-card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
 }
 
-.azure-logo {
-  width: 42px;              /* Azure logo needs slightly more width */
+/* Power BI fix */
+.skill-card img.powerbi {
+  width: 38px;
+  height: 38px;
 }
 
 /* TEXT */
 .skill-card span {
+  display: block;
+  font-size: 0.95rem;
   font-weight: 600;
   color: #3b2f2f;
-  font-size: 0.95rem;
 }
 
-/* HOVER – BROWN THEME */
-.skill-card:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 28px 60px rgba(59,47,47,0.3);
-}
-
+/* Hover color */
 .skill-card:hover span {
-  color: #685369; /* brown text */
+  color: #685369;
 }
 
-.skill-card:hover i,
-.skill-card:hover .custom-logo {
-  transform: scale(1.15);
-  filter: drop-shadow(0 0 8px rgba(104,83,105,0.6)); /* brown glow */
+/* =========================
+   AZURE SPECIAL EFFECT
+========================= */
+
+.azure-card:hover {
+  background: #f8f5f7;
 }
 
-/* Azure logo */
-.skill-logo.azure {
-  width: 34px;           /* ✅ controlled size */
-  height: auto;
-  object-fit: contain;
+.azure-logo {
   transition: all 0.35s ease;
-}
-
-/* Hover effect → brown theme */
-.skill-card:hover .skill-logo.azure {
-  filter: brightness(0) saturate(100%) invert(37%) sepia(14%)
-          saturate(632%) hue-rotate(263deg) brightness(92%) contrast(88%);
-  transform: scale(1.15);
 }
 
 /* PROJECT */
@@ -409,7 +388,7 @@ footer {
   }
 
   .skills-title {
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
 
   .skills-grid {
