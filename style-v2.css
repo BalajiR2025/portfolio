@@ -327,6 +327,21 @@ body {
   filter: drop-shadow(0 0 8px rgba(104,83,105,0.6)); /* brown glow */
 }
 
+/* Azure logo */
+.skill-logo.azure {
+  width: 34px;           /* ✅ controlled size */
+  height: auto;
+  object-fit: contain;
+  transition: all 0.35s ease;
+}
+
+/* Hover effect → brown theme */
+.skill-card:hover .skill-logo.azure {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(14%)
+          saturate(632%) hue-rotate(263deg) brightness(92%) contrast(88%);
+  transform: scale(1.15);
+}
+
 /* PROJECT */
 .project-card {
   background: white;
