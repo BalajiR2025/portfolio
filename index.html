@@ -292,28 +292,13 @@
   <div class="contact-wrapper">
 
     <!-- LEFT : FORM -->
-    <div class="contact-form">
-      <h2>Contact Me</h2>
+   <form id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Type your message..." required></textarea>
+    <button type="submit">Send</button>
+  </form>
 
-      <div class="input-group">
-        <label>Name</label>
-        <input type="text" placeholder="Your name">
-      </div>
-
-      <div class="input-group">
-        <label>Email</label>
-        <input type="email" placeholder="your@email.com">
-      </div>
-
-      <div class="input-group">
-        <label>Message</label>
-        <textarea rows="4" placeholder="Type your message..."></textarea>
-      </div>
-
-      <button class="send-btn">
-        Send Message ✈️
-      </button>
-    </div>
 
     <!-- RIGHT : INFO -->
     <div class="contact-info">
