@@ -244,11 +244,11 @@ body {
 }
 
 /* =========================
-   SKILLS – CLEAN WHITE + BROWN HOVER
+   SKILLS – FINAL POLISH
 ========================= */
 
 .magnetic-skills {
-  background: #ffffff; /* ✅ match previous section */
+  background: #ffffff; /* ✅ PURE WHITE */
   text-align: center;
 }
 
@@ -259,7 +259,7 @@ body {
 }
 
 .skills-subtitle {
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto 60px;
   color: #6b4e4e;
   font-size: 1.05rem;
@@ -276,7 +276,7 @@ body {
 
 /* CARD */
 .skill-card {
-  background: #ffffff;
+  background: #ffffff; /* no grey */
   border-radius: 22px;
   padding: 28px 20px;
   box-shadow: 0 16px 40px rgba(59,47,47,0.15);
@@ -287,17 +287,21 @@ body {
   gap: 14px;
 }
 
-/* DEVICON LOGOS – ORIGINAL COLORS */
+/* ICONS (DEVICON) */
 .skill-card i {
   font-size: 2.6rem;
   transition: transform 0.35s ease, filter 0.35s ease;
 }
 
-/* POWER BI LOGO */
+/* CUSTOM LOGOS */
 .custom-logo {
-  width: 42px;
+  width: 36px;              /* ✅ FIXED SIZE */
   height: auto;
   transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.azure-logo {
+  width: 42px;              /* Azure logo needs slightly more width */
 }
 
 /* TEXT */
@@ -307,16 +311,20 @@ body {
   font-size: 0.95rem;
 }
 
-/* HOVER EFFECT – BROWN THEME */
+/* HOVER – BROWN THEME */
 .skill-card:hover {
   transform: translateY(-12px);
   box-shadow: 0 28px 60px rgba(59,47,47,0.3);
 }
 
+.skill-card:hover span {
+  color: #685369; /* brown text */
+}
+
 .skill-card:hover i,
 .skill-card:hover .custom-logo {
   transform: scale(1.15);
-  filter: drop-shadow(0 0 8px rgba(104,83,105,0.6));
+  filter: drop-shadow(0 0 8px rgba(104,83,105,0.6)); /* brown glow */
 }
 
 /* PROJECT */
