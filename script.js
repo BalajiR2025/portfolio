@@ -168,3 +168,25 @@ document.querySelectorAll(".azure-logo").forEach(logo => {
   });
 });
 
+(function () {
+  emailjs.init("e2mZ6ALXUGUtFPM_e");
+})();
+
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_9cxd22d",
+    "template_rcj1u7k",
+    this
+  ).then(
+    function () {
+      alert("Message sent successfully!");
+      document.getElementById("contact-form").reset();
+    },
+    function (error) {
+      alert("Failed to send message. Please try again.");
+      console.error(error);
+    }
+  );
+});
