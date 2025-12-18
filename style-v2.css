@@ -327,6 +327,30 @@ body {
   filter: drop-shadow(0 0 8px rgba(104,83,105,0.6)); /* brown glow */
 }
 
+/* CUSTOM IMAGE LOGOS (NumPy, Pandas, Azure) */
+.skill-logo {
+  width: 42px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+/* Slight tuning per logo if needed */
+.skill-logo.numpy {
+  width: 40px;
+}
+
+.skill-logo.pandas {
+  width: 44px;
+}
+
+/* Hover effect – brown glow */
+.skill-card:hover .skill-logo {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 10px rgba(104, 83, 105, 0.6));
+}
+
+
 /* PROJECT */
 .project-card {
   background: white;
