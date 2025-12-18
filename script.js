@@ -167,3 +167,4 @@ document.querySelectorAll(".azure-logo").forEach(logo => {
     logo.src = original;
   });
 });
+
