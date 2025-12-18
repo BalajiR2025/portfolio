@@ -153,3 +153,17 @@ cards.forEach(card => {
     card.style.transform = "translate(0,0) scale(1)";
   });
 });
+
+/* Azure logo hover swap */
+document.querySelectorAll(".azure-logo").forEach(logo => {
+  const original = logo.dataset.original;
+  const hover = logo.dataset.hover;
+
+  logo.addEventListener("mouseenter", () => {
+    logo.src = hover;
+  });
+
+  logo.addEventListener("mouseleave", () => {
+    logo.src = original;
+  });
+});
