@@ -350,6 +350,11 @@ body {
   filter: drop-shadow(0 0 10px rgba(104, 83, 105, 0.6));
 }
 
+/* Slightly larger Azure icon */
+.skill-card i.fa-azure {
+  font-size: 3rem;
+}
+
 
 /* PROJECT */
 .project-card {
