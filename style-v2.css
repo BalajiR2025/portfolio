@@ -440,94 +440,162 @@ body {
    CONTACT SECTION
 ========================= */
 
-.contact {
-  background: #ffffff;
-  min-height: 100vh;
-  padding: 100px 10%;
-  display: flex;
-  align-items: flex-start;   /* ⬅️ important */
+.contact-section {
+  background: #f3f2f1;
+  padding: 100px 8%;
 }
 
-/* Wrapper keeps everything on LEFT */
-.contact-wrapper {
-  max-width: 520px;
-}
-
-/* Title */
-.contact-title {
+/* TITLE */
+.contact-heading {
   font-size: 3rem;
-  font-weight: 700;
-  color: #685369;
-  margin-bottom: 50px;
+  color: #5b61c9;
+  margin-bottom: 60px;
 }
 
-/* FORM */
-.contact-form {
-  width: 100%;
+/* MAIN LAYOUT */
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: flex-start;
 }
 
-/* INPUT GROUP */
-.input-group {
+/* ================= FORM ================= */
+
+.contact-form-area {
+  max-width: 480px;
+}
+
+.field {
   margin-bottom: 28px;
-  position: relative;
 }
 
-.input-group label {
-  position: absolute;
-  top: -10px;
-  left: 18px;
-  background: #ffffff;
-  padding: 0 8px;
-  font-size: 0.85rem;
-  color: #685369;
+.field label {
+  display: block;
+  margin-bottom: 6px;
   font-weight: 600;
+  color: #5b61c9;
 }
 
-.input-group input,
-.input-group textarea {
+.field input,
+.field textarea {
   width: 100%;
-  padding: 14px 16px;
+  padding: 14px 18px;
   border-radius: 18px;
-  border: 2px solid #7a6a7a;
-  font-size: 0.95rem;
+  border: 3px solid #7a7fdc;
   outline: none;
-  background: #ffffff;
-  transition: 0.3s ease;
+  font-size: 0.95rem;
+  background: transparent;
 }
 
-.input-group textarea {
-  min-height: 120px;
+.field textarea {
+  min-height: 140px;
   resize: none;
-}
-
-/* FOCUS EFFECT */
-.input-group input:focus,
-.input-group textarea:focus {
-  border-color: #4f3b50;
-  box-shadow: 0 0 0 3px rgba(104,83,105,0.15);
 }
 
 /* SEND BUTTON */
 .send-btn {
-  margin-top: 10px;
-  padding: 12px 26px;
-  border-radius: 30px;
-  border: none;
-  background: #685369;
-  color: #ffffff;
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  box-shadow: 0 12px 30px rgba(104,83,105,0.35);
-  transition: 0.3s ease;
+  background: #5b61c9;
+  color: white;
+  padding: 14px 26px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
 .send-btn:hover {
-  background: #4f3b50;
-  transform: translateY(-3px);
+  background: #685369;
+}
+
+/* ================= RIGHT SIDE ================= */
+
+.contact-info-area {
+  position: relative;
+}
+
+/* INFO ITEMS */
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+  font-size: 1.05rem;
+}
+
+.info-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #5b61c9;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* SOCIAL ICONS */
+.contact-socials {
+  display: flex;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.contact-socials a {
+  width: 44px;
+  height: 44px;
+  background: #5b61c9;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.contact-socials a:hover {
+  background: #685369;
+}
+
+/* ================= VISUAL CIRCLES ================= */
+
+.contact-visual {
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: #5b61c9;
+}
+
+.circle.big {
+  width: 200px;
+  height: 200px;
+  right: 0;
+  bottom: 0;
+}
+
+.circle.mid {
+  width: 90px;
+  height: 90px;
+  right: 160px;
+  bottom: 120px;
+}
+
+.circle.small {
+  width: 60px;
+  height: 60px;
+  right: 80px;
+  bottom: 200px;
 }
 
 
@@ -625,22 +693,13 @@ footer {
 
   .contact-wrapper {
     grid-template-columns: 1fr;
-    text-align: center;
   }
 
-  .contact-info h2 {
-    font-size: 2.2rem;
+  .contact-info-area {
+    display: none;
   }
 
-  .contact-form {
-    padding: 30px;
-  }
-
-  .contact {
-    padding: 80px 6%;
-  }
-
-  .contact-title {
+  .contact-heading {
     font-size: 2.2rem;
   }
 }
