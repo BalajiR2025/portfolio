@@ -289,22 +289,17 @@ body {
 }
 
 /* =========================
-   AZURE LOGO – FINAL FIX
+   AZURE LOGO – JPEG SAFE FIX
 ========================= */
 
-/* Base Azure logo */
 .azure-logo {
-  width: 34px;              /* slightly smaller than Power BI */
+  width: 34px;              /* balanced with other icons */
   height: auto;
   object-fit: contain;
   display: block;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-/* Hover – NO FILTER (prevents glitch) */
-.skill-card:hover .azure-logo {
-  transform: scale(1.1);
-  box-shadow: 0 6px 14px rgba(104, 83, 105, 0.35);
+  pointer-events: none;     /* 🔑 prevents hover repaint */
+  transform: none !important;
+  filter: none !important;
 }
 
 .skill-card {
