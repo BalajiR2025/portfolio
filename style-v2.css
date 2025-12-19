@@ -301,12 +301,20 @@ body {
   box-shadow: 0 0 12px rgba(104, 83, 105, 0.5);
 }
 
-/* FIX: Normalize Azure icon size */
+/* ===== Azure Logo Fix (Local Image) ===== */
 .azure-logo {
-  width: 40px;          /* smaller than others */
+  width: 36px;          /* balanced with other icons */
   height: auto;
   object-fit: contain;
+  transition: transform 0.35s ease, filter 0.35s ease;
 }
+
+/* Hover effect – brown theme */
+.skill-card:hover .azure-logo {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 10px rgba(104, 83, 105, 0.6));
+}
+
 
 /* =========================
    EXPERIENCE
