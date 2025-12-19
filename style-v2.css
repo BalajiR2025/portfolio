@@ -303,7 +303,7 @@ body {
 
 /* FIX: Normalize Azure icon size */
 .azure-logo {
-  width: 34px;          /* smaller than others */
+  width: 40px;          /* smaller than others */
   height: auto;
   object-fit: contain;
 }
