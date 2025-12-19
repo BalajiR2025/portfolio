@@ -46,7 +46,7 @@ body {
 }
 
 .icon-nav a {
-  color: #ffffff;
+  color: #fff;
   font-size: 20px;
   padding: 10px;
   border-radius: 50%;
@@ -73,6 +73,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .split {
@@ -105,20 +106,20 @@ body {
 }
 
 .resume-btn {
-  margin-top: 20px;
   display: inline-block;
+  margin-top: 20px;
   padding: 12px 22px;
   background: var(--primary);
-  color: white;
+  color: #fff;
   text-decoration: none;
   border-radius: 30px;
   font-weight: 600;
 }
 
-.hero-socials {
+.hero-socials.bottom-left {
   position: absolute;
-  bottom: 40px;
   left: 40px;
+  bottom: 40px;
   display: flex;
   gap: 14px;
 }
@@ -138,7 +139,7 @@ body {
    ABOUT
 ========================= */
 .about {
-  background: #ffffff;
+  background: #fff;
 }
 
 .about-wrapper {
@@ -176,7 +177,7 @@ body {
    EDUCATION
 ========================= */
 .education {
-  background: #ffffff;
+  background: #fff;
 }
 
 .edu-container {
@@ -202,17 +203,17 @@ body {
 }
 
 .edu-item {
-  background: #ffffff;
+  background: #fff;
   padding: 22px 26px;
-  margin-bottom: 26px;
   border-radius: 14px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  margin-bottom: 26px;
 }
 
 .edu-year {
-  font-size: 0.85rem;
   color: var(--primary);
   font-weight: 600;
+  font-size: 0.85rem;
 }
 
 .edu-item h3 {
@@ -229,7 +230,7 @@ body {
    SKILLS
 ========================= */
 .magnetic-skills {
-  background: #ffffff;
+  background: #fff;
   text-align: center;
 }
 
@@ -240,23 +241,23 @@ body {
 
 .skills-subtitle {
   margin: 10px auto 60px;
-  max-width: 720px;
   color: #6b4e4e;
+  max-width: 720px;
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 28px;
   max-width: 1100px;
   margin: auto;
 }
 
 .skill-card {
-  background: #ffffff;
+  background: #fff;
   border-radius: 22px;
   padding: 28px 20px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 16px 40px rgba(59,47,47,0.15);
   transition: 0.35s;
   display: flex;
   flex-direction: column;
@@ -266,37 +267,25 @@ body {
 
 .skill-card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 28px 60px rgba(59,47,47,0.3);
 }
 
 .skill-card span {
   font-weight: 600;
+  color: #3b2f2f;
 }
 
-/* IMAGE BASED SKILL ICONS (FIX SIZE) */
-.skill-card img {
-  width: 38px;
-  height: auto;
-  object-fit: contain;
-}
-
-/* Slight tuning */
-.skill-card img.numpy {
-  width: 36px;
-}
-
-.skill-card img.pandas {
-  width: 40px;
-}
-
-.skill-card img.powerbi-logo {
-  width: 34px;   /* 🔥 Power BI fix */
+.skill-card i,
+.skill-logo {
+  font-size: 2.6rem;
+  width: 42px;
 }
 
 /* =========================
    EXPERIENCE
 ========================= */
 .experience {
-  background: #ffffff;
+  background: #fff;
 }
 
 .experience-wrapper {
@@ -308,29 +297,34 @@ body {
 
 .experience-title {
   font-size: 2.6rem;
-  margin-bottom: 40px;
   color: #3b2f2f;
+  margin-bottom: 40px;
 }
 
 .experience-card {
   display: flex;
   gap: 20px;
   background: #fdfcfa;
-  padding: 26px 28px;
+  padding: 26px;
   border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(59,47,47,0.15);
   margin-bottom: 28px;
-  box-shadow: var(--shadow);
 }
 
 .exp-icon {
   width: 46px;
   height: 46px;
-  background: var(--split);
+  background: linear-gradient(135deg, #685369, #8b6f88);
   color: #fff;
   border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.exp-duration {
+  font-size: 0.85rem;
+  color: #8b6f88;
 }
 
 .experience-visual img {
@@ -339,15 +333,15 @@ body {
 }
 
 /* =========================
-   CONTACT (WORKING)
+   CONTACT
 ========================= */
 .contact {
-  background: #ffffff;
+  background: #fff;
 }
 
 .contact-title {
   font-size: 2.8rem;
-  color: var(--split);
+  color: #685369;
   margin-bottom: 60px;
 }
 
@@ -357,26 +351,50 @@ body {
   gap: 80px;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form {
+  max-width: 480px;
+}
+
+.input-group {
+  margin-bottom: 26px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #685369;
+}
+
+.input-group input,
+.input-group textarea {
   width: 100%;
-  padding: 14px;
+  padding: 14px 16px;
   border-radius: 12px;
-  border: 2px solid var(--split);
-  margin-bottom: 22px;
+  border: 2px solid #685369;
+  background: transparent;
 }
 
 .contact-btn {
-  padding: 14px 26px;
-  background: var(--split);
+  background: #685369;
   color: #fff;
   border: none;
+  padding: 14px 26px;
   border-radius: 30px;
   font-weight: 600;
 }
 
 /* =========================
-   MOBILE FIX
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: var(--muted);
+}
+
+/* =========================
+   MOBILE
 ========================= */
 @media (max-width: 768px) {
   .split,
