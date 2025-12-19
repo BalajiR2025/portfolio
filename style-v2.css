@@ -302,6 +302,9 @@ body {
   box-shadow: 0 6px 16px rgba(104, 83, 105, 0.35);
 }
 
+.skill-card {
+  will-change: transform;
+}
 
 /* =========================
    EXPERIENCE
