@@ -135,6 +135,15 @@ body {
   justify-content: center;
 }
 
+.hero-socials a {
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.hero-socials a:hover {
+  background: #685369;
+  transform: translateY(-4px);
+}
+
 /* =========================
    ABOUT
 ========================= */
