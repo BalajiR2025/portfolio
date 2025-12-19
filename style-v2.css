@@ -272,6 +272,26 @@ body {
   font-weight: 600;
 }
 
+/* IMAGE BASED SKILL ICONS (FIX SIZE) */
+.skill-card img {
+  width: 38px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Slight tuning */
+.skill-card img.numpy {
+  width: 36px;
+}
+
+.skill-card img.pandas {
+  width: 40px;
+}
+
+.skill-card img.powerbi-logo {
+  width: 34px;   /* 🔥 Power BI fix */
+}
+
 /* =========================
    EXPERIENCE
 ========================= */
