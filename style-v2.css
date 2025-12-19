@@ -93,11 +93,14 @@ body {
 
 .hero h1 {
   font-size: 2.8rem;
+  min-height: 3.5rem;
 }
 
 .typing-text {
   font-size: 1.4rem;
   color: var(--muted);
+  min-height: 1.8rem;
+  display: block;
 }
 
 .hero-desc {
@@ -140,7 +143,7 @@ body {
 }
 
 .hero-socials a:hover {
-  background: #008080;
+  background: #006D5B;
   transform: translateY(-4px);
 }
 
