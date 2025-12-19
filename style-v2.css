@@ -301,6 +301,13 @@ body {
   box-shadow: 0 0 12px rgba(104, 83, 105, 0.5);
 }
 
+/* FIX: Normalize Azure icon size */
+.azure-logo {
+  width: 34px;          /* smaller than others */
+  height: auto;
+  object-fit: contain;
+}
+
 /* =========================
    EXPERIENCE
 ========================= */
