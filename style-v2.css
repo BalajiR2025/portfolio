@@ -281,6 +281,13 @@ body {
   width: 42px;
 }
 
+/* FIX POWER BI ICON SIZE */
+.powerbi-logo {
+  width: 38px;      /* adjust between 32–40 if needed */
+  height: auto;
+  display: block;
+}
+
 /* =========================
    EXPERIENCE
 ========================= */
