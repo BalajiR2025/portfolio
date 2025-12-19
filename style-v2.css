@@ -288,6 +288,13 @@ body {
   display: block;
 }
 
+/* FIX: Azure logo disappearing on hover */
+.skill-card:hover .azure-logo {
+  transform: scale(1.15);
+  filter: none;               /* SVG safe */
+  opacity: 1;
+}
+
 /* =========================
    EXPERIENCE
 ========================= */
