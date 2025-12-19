@@ -295,6 +295,12 @@ body {
   opacity: 1;
 }
 
+.skill-card:hover .azure-logo {
+  transform: scale(1.15);
+  filter: none;
+  box-shadow: 0 0 12px rgba(104, 83, 105, 0.5);
+}
+
 /* =========================
    EXPERIENCE
 ========================= */
