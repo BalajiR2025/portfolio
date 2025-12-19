@@ -288,31 +288,18 @@ body {
   display: block;
 }
 
-/* FIX: Azure logo disappearing on hover */
-.skill-card:hover .azure-logo {
-  transform: scale(1.15);
-  filter: none;               /* SVG safe */
-  opacity: 1;
-}
-
-.skill-card:hover .azure-logo {
-  transform: scale(1.15);
-  filter: none;
-  box-shadow: 0 0 12px rgba(104, 83, 105, 0.5);
-}
-
-/* ===== Azure Logo Fix (Local Image) ===== */
+/* ===== Azure Logo (Stable, No Glitch) ===== */
 .azure-logo {
-  width: 36px;          /* balanced with other icons */
+  width: 36px;
   height: auto;
   object-fit: contain;
-  transition: transform 0.35s ease, filter 0.35s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect – brown theme */
+/* Smooth hover without flicker */
 .skill-card:hover .azure-logo {
-  transform: scale(1.15);
-  filter: drop-shadow(0 0 10px rgba(104, 83, 105, 0.6));
+  transform: scale(1.12);
+  box-shadow: 0 6px 16px rgba(104, 83, 105, 0.35);
 }
 
 
