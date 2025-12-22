@@ -726,11 +726,11 @@ footer {
    }
    
    .contact-info {
-     order: 2;
-     margin-bottom: 40px;
-     width: 100%;
-     max-width: 420px;
-   }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
    
    .contact-form {
      order: 1;
@@ -743,19 +743,28 @@ footer {
    }
    
    .info-row {
-     flex-direction: column;
-     align-items: center;
-     text-align: center;
-     gap: 8px;
-   }
-   
-   .info-row span {
-     margin-bottom: 4px;
-   }
-   
-   .info-row p {
-     text-align: center;
-   }
+    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin-bottom: 28px;
+    gap: 8px;
+  }
+
+  .info-row span {
+    width: 52px;
+    height: 52px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+
+  .info-row p {
+    text-align: center;
+    margin: 0;
+  }
 
    .info-row {
     flex-direction: column;
