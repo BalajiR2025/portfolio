@@ -465,10 +465,15 @@ body {
 .input-group input,
 .input-group textarea {
   width: 100%;
-  padding: 14px 16px;
-  border-radius: 12px;
+  padding: 16px 18px;
+  border-radius: 14px;
   border: 2px solid #685369;
   background: transparent;
+}
+
+.input-group textarea {
+  height: 220px;        /* increases message box height */
+  resize: vertical;    /* optional user resize */
 }
 
 .contact-btn {
