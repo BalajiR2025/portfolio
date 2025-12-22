@@ -503,8 +503,8 @@ body {
 
 .contact-links {
   display: flex;
-  gap: 16px;
-  margin-top: 30px;
+  gap: 20px;
+  margin-top: 50px;   /* ⬅ creates separation like screenshot */
 }
 
 .contact-links a {
