@@ -743,8 +743,14 @@ footer {
    }
    
    .info-row {
-     justify-content: center;
+     flex-direction: column;
+     align-items: center;
      text-align: center;
+     gap: 8px;
+   }
+   
+   .info-row span {
+     margin-bottom: 4px;
    }
    
    .info-row p {
