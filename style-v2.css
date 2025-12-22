@@ -616,28 +616,31 @@ footer {
 }
 
 .about-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
 
-.about-text {
-  order: 1;
-  text-align: center;
-}
+  /* Title stays on top */
+  .about-text h2 {
+    order: 1;
+  }
 
-.about-visual {
-  order: 2;   /* image after title */
-}
+  /* Image comes AFTER title */
+  .about-visual {
+    order: 2;
+  }
 
-.about-text p {
-  order: 3;
-}
+  /* Entire text block goes AFTER image */
+  .about-text {
+    order: 3;
+  }
 
-.about-img {
-  max-width: 260px;
-  margin: 0 auto;
-}
+  .about-img {
+    max-width: 260px;
+    margin: 0 auto;
+  }
 
 .edu-visual {
   display: none;
@@ -686,28 +689,31 @@ footer {
 }
 
 .experience-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    text-align: center;
+  }
 
-.experience-content {
-  order: 1;
-  text-align: center;
-}
+  /* Title first */
+  .experience-content h2 {
+    order: 1;
+  }
 
-.experience-visual {
-  order: 2;  /* image after title */
-}
+  /* Image after title */
+  .experience-visual {
+    order: 2;
+  }
 
-.experience-card {
-  order: 3;
-}
+  /* Cards after image */
+  .experience-content {
+    order: 3;
+  }
 
-.experience-visual img {
-  max-width: 260px;
-  margin: 0 auto;
-}
+  .experience-visual img {
+    max-width: 260px;
+    margin: 0 auto;
+  }
 
 .experience-card:hover,
 .experience-card:active {
