@@ -723,15 +723,18 @@ footer {
      display: flex;
      flex-direction: column;
      align-items: center;
+     gap: 50px;
    }
-   
+
    .contact-info {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-   
+     order: 2;
+     width: 100%;
+     max-width: 420px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+
    .contact-form {
      order: 1;
      width: 100%;
