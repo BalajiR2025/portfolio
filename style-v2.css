@@ -615,10 +615,37 @@ footer {
   padding: 80px 7%;
 }
 
-.about-img,
-.edu-img,
-.experience-visual img {
-  margin: 0 auto 30px;
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-text {
+  order: 1;
+  text-align: center;
+}
+
+.about-visual {
+  order: 2;
+}
+
+.about-img {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.edu-visual {
+  display: none;
+}
+
+.edu-split {
+  grid-template-columns: 1fr;
+}
+
+.edu-content {
+  width: 100%;
+  text-align: center;
 }
 
 .skills-grid {
@@ -633,33 +660,43 @@ footer {
   font-size: 0.9rem;
 }
 
-.experience-card {
+.experience-wrapper {
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
+  gap: 40px;
 }
 
-.exp-icon {
-  margin-bottom: 10px;
+.experience-content {
+  order: 1;
+  text-align: center;
 }
 
-   .contact-title {
+.experience-visual {
+  order: 2;
+}
+
+.experience-visual img {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.contact-title {
   font-size: 2.2rem;
   margin-bottom: 40px;
 }
 
 .contact-container {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-info {
- order: 1;   /* RIGHT SIDE → TOP */
- margin-bottom: 40px;
+  order: 2;
+  margin-bottom: 40px;
 }
 
 .contact-form {
- order: 2;   /* FORM → BELOW */
+  order: 1;
 }
 
 .contact-links {
