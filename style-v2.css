@@ -802,7 +802,7 @@ footer {
   }
 
   .scroll-top:hover {
-    background: #685369;
+    background: #000000;
     transform: translateY(-4px);
   }
 }
