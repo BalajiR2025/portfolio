@@ -154,7 +154,7 @@ body {
 }
 
 .hero-socials a:hover {
-  background: #006D5B;
+  background: var(--primary);
   transform: translateY(-4px);
 }
 
@@ -521,7 +521,7 @@ body {
 }
 
 .contact-links a:hover {
-  background: #685369;            /* brown hover */
+  background: var(--primary);
   transform: translateY(-4px);
 }
 
