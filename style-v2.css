@@ -691,7 +691,7 @@ footer {
 .experience-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 20px;
     text-align: center;
   }
 
