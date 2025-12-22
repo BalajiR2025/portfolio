@@ -648,8 +648,18 @@ footer {
   margin-bottom: 40px;
 }
 
+.contact-container {
+ display: flex;
+ flex-direction: column;
+}
+
 .contact-info {
-  margin-top: 40px;
+ order: 1;   /* RIGHT SIDE → TOP */
+ margin-bottom: 40px;
+}
+
+.contact-form {
+ order: 2;   /* FORM → BELOW */
 }
 
 .contact-links {
