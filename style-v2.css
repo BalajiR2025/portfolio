@@ -750,9 +750,10 @@ footer {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    text-align: center !important;
+      justify-content: center;
+    text-align: left;
     margin-bottom: 28px;
-    gap: 8px;
+    gap: 10px;
   }
 
   .info-row span {
@@ -764,13 +765,12 @@ footer {
     font-size: 1.2rem;
   }
 
-  .info-row p {
-    text-align: center;
-    margin: 0;
-  }
-
-   .info-row {
-    flex-direction: column;
-    gap: 10px;
-  }
+  .info-row {
+     justify-content: center;
+     text-align: left;
+   }
+   
+   .info-row p {
+     text-align: left;
+   }
 }
