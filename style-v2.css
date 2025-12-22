@@ -480,8 +480,7 @@ body {
   display: flex;
   align-items: center;
   gap: 18px;
-  font-size: 1.05rem;
-  color: #0f172a;
+  margin-bottom: 34px;   /* ⬅ more breathing space */
 }
 
 .info-row span {
@@ -498,8 +497,8 @@ body {
 }
 
 .info-row p {
-  margin: 0;
-  font-weight: 500;
+  line-height: 1.6;
+  font-size: 1.05rem;
 }
 
 .contact-links {
