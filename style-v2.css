@@ -80,6 +80,10 @@ body {
   position: relative;
 }
 
+.hero-title{
+   color: #000000;
+}
+
 .split {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -125,7 +129,7 @@ body {
 }
 
 .resume-btn:hover {
-  background: #685369;
+  background: var(--primary);
   transform: translateY(-4px);
   box-shadow: 0 14px 35px rgba(104,83,105,0.4);
 }
