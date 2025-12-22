@@ -268,7 +268,7 @@ body {
 
 .skills-title {
   font-size: 2.6rem;
-  color: #3b2f2f;
+  color: #685369;
 }
 
 .skills-subtitle {
@@ -324,10 +324,16 @@ body {
 }
 
 .skill-card span {
+  display: block;
+  margin-top: 8px;
   font-weight: 600;
-  color: #3b2f2f;
   font-size: 0.95rem;
-  margin-top: 6px;
+  color: #685369;
+  text-align: center;
+}
+
+.skill-card:hover span {
+  color: #4f3d50;
 }
 
 .skill-card i,
@@ -377,7 +383,7 @@ body {
 
 .experience-title {
   font-size: 2.6rem;
-  color: #3b2f2f;
+  color: #685369;
   margin-bottom: 40px;
 }
 
