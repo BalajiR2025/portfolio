@@ -544,26 +544,75 @@ footer {
    MOBILE
 ========================= */
 @media (max-width: 768px) {
-  .split,
-  .about-wrapper,
-  .edu-split,
-  .experience-wrapper,
-  .contact-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
+  /* HERO – MOBILE */
+.hero {
+  min-height: auto;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
 
-  .icon-nav,
-  .hero-socials {
-    display: none;
-  }
+.hero h1 {
+  font-size: 2.1rem;
+}
 
-   .contact-info {
-    margin-top: 40px;
-    padding: 35px 25px;
-  }
+.typing-text {
+  font-size: 1.2rem;
+}
 
-  .contact-links {
-    justify-content: center;
-  }
+.hero-desc {
+  font-size: 0.95rem;
+}
+
+/* Profile image */
+.hero-img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 80px 7%;
+}
+
+.about-img,
+.edu-img,
+.experience-visual img {
+  margin: 0 auto 30px;
+}
+
+.skills-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.skill-card {
+  padding: 22px 16px;
+}
+
+.skill-card span {
+  font-size: 0.9rem;
+}
+
+.experience-card {
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.exp-icon {
+  margin-bottom: 10px;
+}
+
+   .contact-title {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  margin-top: 40px;
+}
+
+.contact-links {
+  justify-content: center;
+}
+
 }
