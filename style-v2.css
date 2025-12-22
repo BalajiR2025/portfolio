@@ -627,11 +627,15 @@ footer {
 }
 
 .about-visual {
-  order: 2;
+  order: 2;   /* image after title */
+}
+
+.about-text p {
+  order: 3;
 }
 
 .about-img {
-  max-width: 280px;
+  max-width: 260px;
   margin: 0 auto;
 }
 
@@ -648,6 +652,16 @@ footer {
   text-align: center;
 }
 
+.edu-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-item:hover,
+.edu-item:active {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(104,83,105,0.25);
+}
+
 .skills-grid {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -660,10 +674,21 @@ footer {
   font-size: 0.9rem;
 }
 
+.skill-card:hover,
+.skill-card:active {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 50px rgba(104,83,105,0.3);
+}
+
+.skill-card:hover span,
+.skill-card:active span {
+  color: #685369;
+}
+
 .experience-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 35px;
 }
 
 .experience-content {
@@ -672,12 +697,22 @@ footer {
 }
 
 .experience-visual {
-  order: 2;
+  order: 2;  /* image after title */
+}
+
+.experience-card {
+  order: 3;
 }
 
 .experience-visual img {
-  max-width: 280px;
+  max-width: 260px;
   margin: 0 auto;
+}
+
+.experience-card:hover,
+.experience-card:active {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 55px rgba(104,83,105,0.3);
 }
 
 .contact-title {
